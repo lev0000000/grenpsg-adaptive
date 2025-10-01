@@ -1,0 +1,5 @@
+@mixin vp-1439 {
+    @media(max-width:1439px){
+        @content
+    }
+}
