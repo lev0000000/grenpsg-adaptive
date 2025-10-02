@@ -26,4 +26,11 @@
   color: $color-white;
   padding: 30px;
   border: none;
+
+  @include vp-1439
+  {
+    padding: 15px;
+    font-size: 15px;
+    line-height: 20px;
+  }
 }
