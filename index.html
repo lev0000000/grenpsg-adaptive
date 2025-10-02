@@ -127,8 +127,11 @@
           </div>
           <ul class="hero__gallery-list">
             <li class="hero__gallery-item hero__gallery-item--size-xl">
-              <img class="hero__gallery-image" src="images/gallery-1.png" height="490" width="305"
+              <picture>
+                <source media="(max-width:767px)" srcset="images/dracena1-mobile.png 1x, images/dracena2-mobile.png 2x">
+                <img class="hero__gallery-image" src="images/gallery-1.png" height="490" width="305"
                 alt="Изображение комнатного растения" srcset="images/dracena2x.png 2x">
+              </picture>
             </li>
             <li class="hero__gallery-item">
               <img class="hero__gallery-image" src="images/gallery-2.png" height="220" width="300"
@@ -142,7 +145,7 @@
         </div>
       </div>
     </section>
-    <!--
+    
     <section class="about-company">
       <div class="container">
         <h2 class="visually-hidden">О компании</h2>
@@ -179,9 +182,12 @@
             </ul>
           </aside>
           <div class="about-company__image">
-            <img src="images/about-company.jpg" height="300" width="300" alt="Фотография девушки и растения"
+            <picture>
+              <source media="(max-width:1439px)" srcset="images/eye-opacity.jpg 1x, images/eye-opacity2x.jpg 2x">
+              <img src="images/about-company.jpg" height="300" width="300" alt="Фотография девушки и растения"
               srcset="image/eye2x.jpg 2x">
           </div>
+            </picture>
           <div class="about-company__description">
             <p class="about-company__text">
               <b>&laquo;Зеленый Пассажир&raquo;</b>&nbsp;&mdash; это уникальный интернет-магазин, созданный для
@@ -225,7 +231,7 @@
         <a class="about-company__btn btn" href="#">Узнать подробнее</a>
       </div>
     </section>
-    <section class="application">
+    <!-- <section class="application">
       <div class="container">
         <div class="application__wrapper">
           <h2 class="application__title">Оставить заявку</h2>
@@ -288,8 +294,8 @@
           </form>
         </div>
       </div>
-    </section>
-    -->
+    </section> -->
+    
   </main> 
   <footer class="footer">
     <div class="container">

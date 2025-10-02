@@ -5,11 +5,17 @@
   min-height: calc(100vh - 182px);
   display: flex;
   align-items: center;
+  position: relative;
 
   @include vp-1439 {
     min-height: unset;
     padding: 55px 0;
   }
+
+  @include vp-767{
+      padding: 40px 0 260px;
+      margin-bottom: 30px;
+    }
 
   &__wrapper {
     display: grid;
@@ -20,6 +26,15 @@
     @include vp-1439 {
       grid-template-columns: 1fr;
     }
+    
+  }
+
+  &__inner{
+
+    @include vp-767{
+      z-index: 1;
+    }
+    
   }
 
   &__text {
@@ -35,6 +50,13 @@
       line-height: 32px;
       margin-bottom: 36px;
     }
+
+    @include vp-767{
+      font-size: 22px;
+      line-height: 26px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
   }
 
   &__slogan {
@@ -48,6 +70,13 @@
       line-height: 24px;
       margin: 0 0 30px;
     }
+
+    @include vp-767{
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 23px;
+      text-align: center;
+    }
   }
 
   &__btn {
@@ -56,6 +85,10 @@
     @include vp-1439 {
       width: 250px;
       margin: 0 auto;
+    }
+
+    @include vp-767{
+      width: 180px;
     }
   }
 
@@ -70,11 +103,35 @@
     @include vp-1439 {
       display: none;
     }
+
+    @include vp-767{
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      
+    }
   }
 
   &__gallery-item {
+
+    @include vp-767{
+      display: none;
+    }
+
     &--size-xl {
       grid-row: span 2;
+
+      @include vp-767{
+        display: block;
+        grid-row: unset;
+        width: 255px;
+        height: 281px;
+      }
     }
+
+
   }
 }
