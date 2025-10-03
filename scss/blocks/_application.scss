@@ -9,21 +9,70 @@
     background-image: url("../../images/background-lower2x.png");
   }
 
+  @include vp-1439{
+      padding: 60px 0 55px;
+      background-image: url("../../images/background-lower-xl1x.png");
+      background-size: cover;
+    }
+
+    @media (min-resolution: 2ddpx) and (max-width:$vp-mobile){
+      background-image: url("../../images/background-lower-xl2x.png");
+      background-size: cover;
+    }
+
+  @include vp-767{
+    background-image: url("../../images/bg-xl-mobile1x.png");
+    padding: 30px 0 60px;
+  }
+
+  @media (max-resolution:2ddpx) and (max-width:$vp-mobile){
+    background-image: url("../../images/bg-xl-mobile2x.png");
+  }
+ 
+
   &__wrapper {
     max-width: 930px;
     margin: 0 auto;
+
+    @include vp-1439{
+      max-width: unset;
+    }
   }
 
   &__title {
     font-size: 30px;
     line-height: 36px;
     margin: 0 0 40px 0;
+
+    @include vp-1439{
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      margin: 0 0 30px;
+    }
+
+    @include vp-767{
+      font-style: 20px;
+      line-height: 24px;
+
+    }
   }
 
   &__inner {
     display: flex;
     gap: 70px;
     margin: 0 0 40px 0;
+
+    @include vp-1439{
+      gap: 48px;
+      margin-bottom: 36px;
+    }
+
+    @include vp-767{
+      flex-direction: column;
+      gap: 30px;
+      margin-bottom: 35px;
+    }
   }
 
   &__group {
@@ -38,6 +87,18 @@
     margin: 0 0 30px 0;
     padding: 0;
     font-weight: 700;
+
+    @include vp-1439{
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 25px;
+    }
+
+    @include vp-767{
+      font-size: 18px;
+      line-height: 22px;
+      margin: 0 0 20px;
+    }
   }
 
   &__form-wrapper {
@@ -48,15 +109,41 @@
 
   &__input {
     width: 430px;
+
+    @include vp-1439{
+      width: 330px;
+    }
+
+    @include vp-767{
+      width: 100%;
+    }
   }
 
   &__btn {
     margin: 0 0 20px 0;
     width: 345px;
     padding: 14px;
+
+    @include vp-1439{
+      width: 280px;
+      margin: 0 auto 20px;
+    }
+
+    @include vp-767{
+      width: 200px;
+    }
   }
 
   &__checkbox {
     width: 490px;
+
+    @include vp-1439{
+      width: 405px;
+      margin: 0 auto;
+    }
+
+    @include vp-767{
+      width: 100%;
+    }
   }
 }

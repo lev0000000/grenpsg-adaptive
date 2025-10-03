@@ -251,6 +251,11 @@ input[type=search]::-webkit-search-results-decoration {
   cursor: pointer;
   color: #000000;
 }
+@media (max-width: 767px) {
+  .custom-checkbox__label {
+    padding-left: 30px;
+  }
+}
 
 .custom-checkbox__label:hover::before {
   border-color: rgba(71, 80, 9, 0.7);
@@ -279,6 +284,12 @@ input[type=search]::-webkit-search-results-decoration {
   content: "";
   left: 0;
 }
+@media (max-width: 767px) {
+  .custom-checkbox__label::before {
+    height: 20px;
+    width: 20px;
+  }
+}
 
 .custom-checkbox__icon {
   color: #475009;
@@ -288,6 +299,13 @@ input[type=search]::-webkit-search-results-decoration {
   top: 50%;
   transform: translateY(-50%);
 }
+@media (max-width: 767px) {
+  .custom-checkbox__icon {
+    width: 11px;
+    height: 8px;
+    left: 5px;
+  }
+}
 
 .custom-checkbox__label-link {
   text-decoration: underline;
@@ -296,6 +314,18 @@ input[type=search]::-webkit-search-results-decoration {
 .custom-checkbox__heading {
   font-size: 18px;
   line-height: 24px;
+}
+@media (max-width: 1439px) {
+  .custom-checkbox__heading {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .custom-checkbox__heading {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .custom-checkbox__text {
@@ -772,6 +802,11 @@ input[type=search]::-webkit-search-results-decoration {
     margin: 0 0 40px;
   }
 }
+@media (max-width: 767px) {
+  .about-company {
+    margin-bottom: 30px;
+  }
+}
 .about-company__wrapper {
   display: grid;
   grid-template-columns: 300px 1fr;
@@ -922,19 +957,75 @@ input[type=search]::-webkit-search-results-decoration {
     background-image: url("../../images/background-lower2x.png");
   }
 }
+@media (max-width: 1439px) {
+  .application {
+    padding: 60px 0 55px;
+    background-image: url("../../images/background-lower-xl1x.png");
+    background-size: cover;
+  }
+}
+@media (min-resolution: 2ddpx) and (max-width: 767px) {
+  .application {
+    background-image: url("../../images/background-lower-xl2x.png");
+    background-size: cover;
+  }
+}
+@media (max-width: 767px) {
+  .application {
+    background-image: url("../../images/bg-xl-mobile1x.png");
+    padding: 30px 0 60px;
+  }
+}
+@media (max-resolution: 2ddpx) and (max-width: 767px) {
+  .application {
+    background-image: url("../../images/bg-xl-mobile2x.png");
+  }
+}
 .application__wrapper {
   max-width: 930px;
   margin: 0 auto;
+}
+@media (max-width: 1439px) {
+  .application__wrapper {
+    max-width: unset;
+  }
 }
 .application__title {
   font-size: 30px;
   line-height: 36px;
   margin: 0 0 40px 0;
 }
+@media (max-width: 1439px) {
+  .application__title {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    margin: 0 0 30px;
+  }
+}
+@media (max-width: 767px) {
+  .application__title {
+    font-style: 20px;
+    line-height: 24px;
+  }
+}
 .application__inner {
   display: flex;
   gap: 70px;
   margin: 0 0 40px 0;
+}
+@media (max-width: 1439px) {
+  .application__inner {
+    gap: 48px;
+    margin-bottom: 36px;
+  }
+}
+@media (max-width: 767px) {
+  .application__inner {
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 35px;
+  }
 }
 .application__group {
   border: none;
@@ -948,6 +1039,20 @@ input[type=search]::-webkit-search-results-decoration {
   padding: 0;
   font-weight: 700;
 }
+@media (max-width: 1439px) {
+  .application__group-name {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .application__group-name {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 0 20px;
+  }
+}
 .application__form-wrapper {
   display: flex;
   flex-direction: column;
@@ -956,13 +1061,45 @@ input[type=search]::-webkit-search-results-decoration {
 .application__input {
   width: 430px;
 }
+@media (max-width: 1439px) {
+  .application__input {
+    width: 330px;
+  }
+}
+@media (max-width: 767px) {
+  .application__input {
+    width: 100%;
+  }
+}
 .application__btn {
   margin: 0 0 20px 0;
   width: 345px;
   padding: 14px;
 }
+@media (max-width: 1439px) {
+  .application__btn {
+    width: 280px;
+    margin: 0 auto 20px;
+  }
+}
+@media (max-width: 767px) {
+  .application__btn {
+    width: 200px;
+  }
+}
 .application__checkbox {
   width: 490px;
+}
+@media (max-width: 1439px) {
+  .application__checkbox {
+    width: 405px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .application__checkbox {
+    width: 100%;
+  }
 }
 
 .aside-nav {
